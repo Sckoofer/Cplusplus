@@ -16,10 +16,7 @@ void TelaIns(){
 
 
 int main()
-
-	{
-	
-		char ini;
+{		char ini;
 		char nomeCon[20]; //esta configurado pra 10, mas depois você pode aumentar o limite se quiser;
 		int	 Ens = 0;
 		char EnsNivel1[50] = "Ensino Medio Concluido";
@@ -50,8 +47,6 @@ int main()
 			cin  >>	NuCon ;
 			while ( i  < NuCon)
 			{	
-				
-				
 				system ("cls");
 				cout << "DIGITE AGORA O SEU PRIMEIRO NOME\n";
 				cout << "\n>>>>  ";
@@ -64,36 +59,21 @@ int main()
 				if(Ens == 1)
 					{
 						EnsNivel1;
-
 					}
 				if(Ens == 2)
 					{
 						EnsNivel2;
-				
 					}
 				if(Ens == 3)
 					{
 						EnsNivel3;
-				
+						
 					}
-			
-			
-				i++;
-			
+				i++;	
 			}
-		
-
-		
-	}
-	
-		for (int i = 0; i <= NuCon; i++)
-		{
-			cout << " Os cadastrados sao" <<
-		
 		}
-	
-	
-
-	
-	
-	return 0;
+cout << "\n->Foram cadastrados " << NuCon << " concorrentes\n->O ultimo cadastrado foi: " << nomeCon;
+cout << "\n";
+cout << "\n\n\n";
+return 0;
+}
