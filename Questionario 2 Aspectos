@@ -47,7 +47,7 @@ int main()
 	int PosVet = 0;
 	int contadorErro = 0;
 	int senha;
-	
+	int opcao1,opcao2,opcao3,opcao4,opcao5;
 	
 	cout << "\n\n";
 	cout << ">>>  DIGITE A SENHA DISPONIBILIZADA NO CODIGO PARA ENTRAR EM MODO ADMINSTRADOR\n";
@@ -59,7 +59,7 @@ int main()
 	{
 		system("cls");
 		cout << "++++++++++++++++++++++++++++++++++++++++++\n";
-		cout << "+ BEM VINDO AO QUESTIONARIO VERSAO 1.0  +\n";
+		cout << "+ BEM VINDO AO QUESTIONARIO VERSAO 1.0  +\n"; ///TERMINAR ESSE MENU AQUI!!!!
 		cout << "++++++++++++++++++++++++++++++++++++++++++\n";
 		cout << "\nNESSE MENU VOCE PODERA REALIZAR ALTERACOES";
 		cout << "\nNA QUANTIDADE DE PONTOS NECESSARIOS QUE O";
@@ -68,16 +68,31 @@ int main()
 		cout << "PARA MELHOR ENTEDIMENTO, ENTRE NO QUESTIONARIO\n";
 		cout << "EM MODO USUARIO E ESCOLHA QUAL RESPOSTA\n";
 		cout << "RECEBERA A QUANTIDADE DE PONTOS";
-		
-		//aqui voce decide quais perguntas devem ser respondidas
-		//para ganhar os pontos
-		//NO FINAL, a resposta certa podem ser só algumas
-		//ou cada resposta ganha um numero de pontos
-		//os quais serao somados no final
-		//VOCE DECIDE
-		cin >> senha;
+		cout << "\n\n\n\n";
+		cout << "\n-----------------------------\n";
+		cout << "SOBRE A PRIMEIRA PERGUNTA, QUAL A OPCAO CORRETA?";
+		cout << "\nOPCAO 0\nOPCAO 1\nOPCAO 2\nOPCAO 3\nOPCAO 4\n\n\n";
+		cout << "DIGITE APENAS O NUMERO DA OPCAO";
+		cout << "\n>>>>>>>";
+		cin >> opcao1;
+		cout << "\nSOBRE A SEGUNDA PERGUNTA, QUAL A OPCAO CORRETA?";
+		cout << "\nOPCAO 0\nOPCAO 1\nOPCAO 2\nOPCAO 3\nOPCAO 4\n\n\n";
+		cout << "DIGITE APENAS O NUMERO DA OPCAO";
+		cout << "\n>>>>>>>";
+		cin >> opcao2;
+		cout << "\nSOBRE A TERCEIRA PERGUNTA, QUAL A OPCAO CORRETA?";
+		cout << "\nOPCAO 0\nOPCAO 1\nOPCAO 2\nOPCAO 3\nOPCAO 4\n\n\n";
+		cout << "DIGITE APENAS O NUMERO DA OPCAO";
+		cout << "\n>>>>>>>";
+		cin >> opcao3;
+		cout << "\nSOBRE A QUARTA PERGUNTA, QUAL A OPCAO CORRETA?";
+		cout << "\nOPCAO 0\nOPCAO 1\nOPCAO 2\nOPCAO 3\nOPCAO 4\n\n\n";
+		cout << "DIGITE APENAS O NUMERO DA OPCAO";
+		cout << "\n>>>>>>>";
+		cin >> opcao4;
+		senha = 0;	
 	}
-	senha = 0;
+	
 	
 	system("cls");
 	cout << "\n\n\n\n\n\n";
@@ -212,7 +227,6 @@ int main()
   		
 		
 		PosVet++;
-		
 		//Finalizacao do questionario
 		ContadorValor++;
 		system("cls");
@@ -220,6 +234,8 @@ int main()
 		cout << "    Digite uma letra ou\nn   umero para recomeca-lo\n";
 		cin >> i;
 		system("cls");
+		
+		
 		
 		
 		
@@ -233,8 +249,8 @@ int main()
 	cin >> senha;
 	if (senha == 4112)
 	{
-		cout << " " //faça aqui o resultado das pesquisas
-		
+		cout << "\n\n\n\n\n"; //faça aqui o resultado das pesquisas
+		cout << "";
 	}
 	
 	
