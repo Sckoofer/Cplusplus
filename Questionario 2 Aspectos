@@ -1,4 +1,5 @@
-//Avaliador de perfil, aquele perfil que mais se compara ao perfil da empresa
+//Avaliação de perfil
+//70% concluído
 //SENHA ADMIN 4112
 #include <iostream>
 #include <stdlib.h>
