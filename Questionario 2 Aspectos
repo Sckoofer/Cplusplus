@@ -57,6 +57,7 @@ int main()
 	int senha;
 	int opcao1,opcao2,opcao3,opcao4,opcao5;
 	int EscolhidoID[1000];
+	int limiteResult = 0;
 
 	cout << "\n\n";
 	cout << ">>>  DIGITE A SENHA DISPONIBILIZADA NO CODIGO PARA ENTRAR EM MODO ADMINSTRADOR\n";
@@ -153,7 +154,7 @@ int main()
 			cout << "Digite 3 para responder 'gosto'\n";
 			cout << "Digite 4 para responder 'gosto bastante'";
 			PergTela2();
-			cin >> Perg1[PosVet]; ///o que voce vai fazer se o usuario inserir uma letra aqui?
+			cin >> Perg1[PosVet];
 			contadorErro++;
 		}
 
@@ -197,8 +198,6 @@ int main()
 			contadorErro++;
 		}
 
-
-
 		contadorErro = 0;
 
 		while((Perg4[PosVet] < 1 ) || (Perg4[PosVet] > 4 ))
@@ -238,11 +237,12 @@ int main()
  			contadorErro++;
  		}
 
- 		if((Perg1[PosVet] == opcao1) || (Perg2[PosVet] == opcao2)||(Perg3[PosVet] == opcao3)
-        ||(Perg4[PosVet] == opcao4) || (Perg5[PosVet] == opcao5));
+ 		if((Perg1[PosVet] == opcao1) && (Perg2[PosVet] == opcao2) && (Perg3[PosVet] == opcao3)
+        && (Perg4[PosVet] == opcao4) && (Perg5[PosVet] == opcao5))
         {
             
             EscolhidoID[PosVet] = ID[PosVet];
+            limiteResult++;
 			
         }
 
@@ -252,15 +252,10 @@ int main()
 		ContadorValor++;
 		system("cls");
 		cout << "\n    =====================\n    Perguntas encerradas\n    =====================\n";
-		cout << "    Digite um numero para\n    recomeca-lo\n";
+		cout << "    Digite um numero para\n    continuar\n";
 		cout << "\n    >>  ";
 		cin >> i;
 		system("cls");
-
-
-
-
-
 	}
 
 	system ("cls");
@@ -271,26 +266,15 @@ int main()
 	cin >> senha;
 	if (senha == 4112)
 	{
-
 		system("cls");
-		cout << "O(s) entrevistado(s) que corresponderam aos requisitos sao\n";
-		for (int a = 0; a <= NumEntrev; a++)
+		cout << "\n\nA identificacao do(s) entrevistado(s) que corresponderam aos requisitos sao\n";
+		for (int a = 0; a <= limiteResult && limiteResult <= NumEntrev; a++)
 		{
-			cout << EscolhidoID[a] << "\n";
+			printf("%d", EscolhidoID[a]);
+			cout << "\n----------------\n";
 		}
 		cout << "Fim";
-	
 	}
 	
-
-
 	return 0;
 }
-
-//Usando um vetor, armazene as informacoes de cada questionario gerado e faça
-//e compare o participante que melhor se adequa a empresa
-
-//Voce pode fazer um menu para configurar as opcoes de resposta
-//que o avaliador deseja disponibilizar no questionario
-
-//formas de compilar as respontas: voce pode somar o valor de todas as respostas e a mais alta (com excessao de algumas questoes) correspondem as expectativas do empregador
