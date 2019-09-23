@@ -1,0 +1,58 @@
+/*vestimentas
+13% concluido*/
+
+#include <iostream>
+#include <locale.h>
+
+using namespace std;
+
+
+struct roupas{
+	
+	string identi;
+	string calcados;
+	string inferiores;
+	string superiores;
+	string chapeu;
+	
+	
+};
+
+
+int main()
+{
+	setlocale(LC_ALL,"portuguese");
+	roupas identi[5], cabeca[5], torso[5], calcas[5], pes[5];
+	int repet = 0;
+	
+	while (repet <= 5)
+	{
+		cout << "BEM VINDO AO SISTEMA DE VESTIMENTAS\n";
+		cout << "RESPONDA AS PEGUNTAS ABAIXO\n";
+		cout << "++++++++++++++++++++++++++++++++++++\n\n\n";
+		
+		cout << "Digite seu nome:\n";
+		cin >> identi[repet].identi;
+		
+		cout << "Digite o que vai usar na cabeca?\n";
+		cin >> cabeca[repet].chapeu;
+		cout << "Digite a roupa que ira usar nos membros superiores\n";
+		cin >> torso[repet].superiores;
+		cout << "Digite o que usara nos menbros inferiores\n";
+		cin >> calcas[repet].inferiores;
+		cout << "Quais serao os seus calcados?\n";
+		cin >> pes[repet].calcados;
+		
+		
+		cout << "------------\nAs roupas foram\n definidas\n---------\n";
+		cout << "--Digite algo para continuar\n";
+		system("cls");
+		
+		
+		repet++;
+	}
+	
+	
+	
+	return 0;
+}
