@@ -1,5 +1,5 @@
 /*vestimentas
-13% concluido*/
+23% concluido*/
 
 #include <iostream>
 #include <locale.h>
@@ -15,7 +15,6 @@ struct roupas{
 	string superiores;
 	string chapeu;
 	
-	
 };
 
 
@@ -24,28 +23,48 @@ int main()
 	setlocale(LC_ALL,"portuguese");
 	roupas identi[5], cabeca[5], torso[5], calcas[5], pes[5];
 	int repet = 0;
+	char cont;
 	
 	while (repet <= 5)
 	{
 		cout << "BEM VINDO AO SISTEMA DE VESTIMENTAS\n";
-		cout << "RESPONDA AS PEGUNTAS ABAIXO\n";
+		cout << "ESCOLHA OS CONJUNTOS ADEQUADOS\n";
 		cout << "++++++++++++++++++++++++++++++++++++\n\n\n";
 		
-		cout << "Digite seu nome:\n";
+		cout << "Digite o nome do conjunto:\n";
 		cin >> identi[repet].identi;
 		
-		cout << "Digite o que vai usar na cabeca?\n";
+		cout << "\n\n\n\n";
+		cout << "--Primeira peça de roupa: chapéu--\n";
+		cout << "--Digite qual tipo de chapéu será usado--\n";
 		cin >> cabeca[repet].chapeu;
-		cout << "Digite a roupa que ira usar nos membros superiores\n";
+		
+		cout << "--Segunda peça de roupa: torso--\n";
+		cout << "--Digite qual a vestimenta que será usada--\n";
 		cin >> torso[repet].superiores;
-		cout << "Digite o que usara nos menbros inferiores\n";
+		
+		
+		
+		cout << "--Terceira peça de roupa: pernas--\n";
+		cout << "--Digite qual vestimenta será usada para os membros inferiores--\n";
 		cin >> calcas[repet].inferiores;
-		cout << "Quais serao os seus calcados?\n";
+		
+		
+		cout << "--Quarte peça de roupa: calçados--\n";
+		cout << "--Digite qual tipo de calçado será usado--\n";
 		cin >> pes[repet].calcados;
+		system("cls");
 		
-		
-		cout << "------------\nAs roupas foram\n definidas\n---------\n";
-		cout << "--Digite algo para continuar\n";
+		cout << "\n-------------------------------------------\n";
+		cout << "\n-------As conjunto foi selecionadas--------\n";
+		cout << "\n-------------------------------------------\n";
+		cout << identi[repet].identi << "\n";
+		cout << cabeca[repet].chapeu << "\n";
+		cout << torso[repet].superiores << "\n";
+		cout << calcas[repet].inferiores << "\n";
+		cout << pes[repet].calcados << "\n";
+		cout << "\n--------Digite algo para continuar---------\n";
+		cin >> cont;
 		system("cls");
 		
 		
