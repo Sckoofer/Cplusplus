@@ -21,17 +21,19 @@ struct roupas{
 int main()
 {
 	setlocale(LC_ALL,"portuguese");
-	roupas identi[5], cabeca[5], torso[5], calcas[5], pes[5];
-	int repet = 0;
+	roupas identi[50], cabeca[5], torso[5], calcas[5], pes[5];
+	int repet, limite;
 	char cont;
 	
-	while (repet <= 5)
+	while (repet < limite)
 	{
 		cout << "BEM VINDO AO SISTEMA DE VESTIMENTAS\n";
 		cout << "ESCOLHA OS CONJUNTOS ADEQUADOS\n";
 		cout << "++++++++++++++++++++++++++++++++++++\n\n\n";
 		
-		cout << "Digite o nome do conjunto:\n";
+		cout << "Digite quantos conjuntos serão criados\n";
+		cin >> limite;
+		cout << "Digite o nome do conjunto, não use espaço entre as palavras:\n";
 		cin >> identi[repet].identi;
 		
 		cout << "\n\n\n\n";
@@ -42,7 +44,6 @@ int main()
 		cout << "--Segunda peça de roupa: torso--\n";
 		cout << "--Digite qual a vestimenta que será usada--\n";
 		cin >> torso[repet].superiores;
-		
 		
 		
 		cout << "--Terceira peça de roupa: pernas--\n";
@@ -58,7 +59,7 @@ int main()
 		cout << "\n-------------------------------------------\n";
 		cout << "\n-------As conjunto foi selecionadas--------\n";
 		cout << "\n-------------------------------------------\n";
-		cout << identi[repet].identi << "\n";
+		cout << "Identificação do conjunto: "<<identi[repet].identi << "\n";
 		cout << cabeca[repet].chapeu << "\n";
 		cout << torso[repet].superiores << "\n";
 		cout << calcas[repet].inferiores << "\n";
