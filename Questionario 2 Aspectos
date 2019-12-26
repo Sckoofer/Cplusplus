@@ -1,5 +1,5 @@
 //Avaliação de perfil
-//76% concluído
+//78% concluído
 //SENHA ADMIN 4112
 #include <iostream>
 
@@ -16,7 +16,7 @@ void PergTela1() //layout dos questionario
 void PergTela2() //layout dos questionario
 {
 	cout << "\n------------------------\n";
-	cout << "\n>>>>>     ";
+	cout << "\n>>>>>  ";
 }
 void TelaAviso(int contador) //layout tela de erro
 {
@@ -71,7 +71,7 @@ int main()
 		cout << "++++++++++++++++++++++++++++++++++++++++++\n";
 		cout << "\nNESSE MENU VOCE PODERA REALIZAR ALTERACOES";
 		cout << "\nNA QUANTIDADE DE PONTOS NECESSARIOS QUE O";
-		cout << "\nENTREVISTADO PRECISA PARA GANAHR DESTAQUE";
+		cout << "\nENTREVISTADO PRECISA PARA GANHAR DESTAQUE";
 		cout << "\n---------------------------------------------\n";
 		cout << "\n---------------------------------------------\n";
 		cout << "PARA MELHOR ENTEDIMENTO, ENTRE NO QUESTIONARIO\n";
@@ -96,19 +96,17 @@ int main()
 		cin >> opcao5;
 		senha = 0;
 		system("cls");
-		cout << "As opcoes corretas estao configradas. Para desfazer, reinicie o programa\n";
-		cout << "Digite um numero para iniciar o questionario\n>>>>   ";
-		cin >> i;
+		cout << "\n\n>>  As opcoes corretas estao configradas  <<\n";
+		cout << ">>  Para desfazer, reinicie o programa    <<\n";
+		cout << "\n\n\n";
+		system("pause");
 	}
 
 
 	system("cls");
-	cout << "\n\n\n\n\n\n";
-	cout << " =======                   ======\n";
-	cout << "=====  QUESTIONARIO INICIADO   =====\n";
-	cout << " =======                   ======\n";
-	cout << "\n\n\n\n";
-	cout << "Qual o numero de participantes?\nO numero definira a quantidade maxima de repeticoes\n";
+	cout << "\n\n\n\n\n";
+	cout << ">>         Qual o numero de participantes?\n";
+	cout << ">> O numero definira a quantidade maxima de repeticoes de perguntas\n";
 	cout << "\n>>>>>     ";
 	cin >> NumEntrev;
 	if ((NumEntrev < 0) || (NumEntrev > 1000))
@@ -124,9 +122,14 @@ int main()
 
 	while ((ContadorValor < NumEntrev) && (NumEntrev > 0))
 	{
-
-        cout << "Voce precisa digitar um numero que sera sua identificacao\n";
-        cin >> ID[PosVet];
+		cout << "\n\n\n\n";
+	cout << "    =======                   ======\n";
+	cout << "   =====  QUESTIONARIO INICIADO   =====\n";
+	cout << "    =======                   ======\n";
+	cout << "\n\n";
+        cout << "\n\n>> Digite um numero que sera a sua identificacao.\n\n>>>> ";
+        
+		cin >> ID[PosVet];
         system("cls");
             
     
@@ -251,9 +254,8 @@ int main()
 		ContadorValor++;
 		system("cls");
 		cout << "\n    =====================\n    Perguntas encerradas\n    =====================\n";
-		cout << "    Digite um numero para\n    continuar\n";
-		cout << "\n    >>  ";
-		cin >> i;
+		cout << "\n\n\n";
+		system ("pause");
 		system("cls");
 	}
 
