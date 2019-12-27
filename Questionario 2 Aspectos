@@ -49,7 +49,8 @@ int main()
 
 	int NumEntrev = 0, ContadorValor;
 	int TrabEmEqui;//variaveis de opcoes
-	int Perg1[1000] = {-1}, Perg2[1000] = {-1}, Perg3[1000] = {-1}, Perg4[1000] = {-1},Perg5[1000] = {-1}, i;
+	int Perg1[1000] = {-1}, Perg2[1000] = {-1}, Perg3[1000] = {-1};
+	int Perg4[1000] = {-1},Perg5[1000] = {-1}, i;
 	int PosVet = 0, ID[1000];
 	int contadorErro = 0;
 	int senha;
@@ -58,17 +59,21 @@ int main()
 	int limiteResult = 0;
 
 	cout << "\n\n";
-	cout << ">>>  DIGITE A SENHA DISPONIBILIZADA NO CODIGO PARA ENTRAR EM MODO ADMINSTRADOR\n";
-	cout << "\n   CASO INSIRA UMA SENHA INCORRETA O PROGRAMA ENTRARA EM MODO USUARIO\n";
-	cout << "   E O QUESTIONARIO INICIARA NORMALMENTE\n\n";
-	cout << "SENHA: ";
+	cout << "++++++++++++++++++++++++++++++++++++++++++\n";
+	cout << "+ BEM VINDO AO QUESTIONARIO VERSAO 1.27  +\n"; 
+	cout << "++++++++++++++++++++++++++++++++++++++++++\n";
+	cout << "\n\n_________________________________________\n\n";
+	cout << "  DIGITE  A  SENHA  DISPONIBILIZADA  NO  \n";
+	cout << "  CODIGO  PARA  ENTRAR  EM  MODO\n  ADMINSTRADOR.\n";
+	cout << "\n  CASO  INSIRA  UMA  SENHA  INCORRETA O";
+	cout << "\n  PROGRAMA  ENTRARA  EM  MODO USUARIO\n";
+	cout << "  E O QUESTIONARIO INICIARA NORMALMENTE\n";
+	cout << "_________________________________________\n";
+	cout << "\nSENHA: ";
 	cin >> senha;
 	while (senha == 4112)
 	{
 		system("cls");
-		cout << "++++++++++++++++++++++++++++++++++++++++++\n";
-		cout << "+ BEM VINDO AO QUESTIONARIO VERSAO 1.0  +\n"; 
-		cout << "++++++++++++++++++++++++++++++++++++++++++\n";
 		cout << "\nNESSE MENU VOCE PODERA REALIZAR ALTERACOES";
 		cout << "\nNA QUANTIDADE DE PONTOS NECESSARIOS QUE O";
 		cout << "\nENTREVISTADO PRECISA PARA GANHAR DESTAQUE";
@@ -104,10 +109,12 @@ int main()
 
 
 	system("cls");
-	cout << "\n\n\n\n\n";
-	cout << ">>         Qual o numero de participantes?\n";
-	cout << ">> O numero definira a quantidade maxima de repeticoes de perguntas\n";
-	cout << "\n>>>>>     ";
+	cout << "\n\n--------------------------------------\n";
+	cout << "  Qual o  numero  de  participantes?\n";
+	cout << "  O  numero  definira  a quantidade\n";
+	cout << "  maxima de repeticoes de perguntas\n";
+	cout << "--------------------------------------\n";
+	cout << "\n>>>>>  ";
 	cin >> NumEntrev;
 	if ((NumEntrev < 0) || (NumEntrev > 1000))
 	{
