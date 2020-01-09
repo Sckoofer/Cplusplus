@@ -185,9 +185,9 @@ int main()
 			cout << "'nunca trabalhei assim'\n\n";
 			cout << "Digite 2 para responder:\n";
 			cout << "'me incomoda um pouco'\n\n";
-			cout << "\nDigite 3 para responder:\n";
+			cout << "Digite 3 para responder:\n";
 			cout << "'nao me incomoda trabalhar assim'\n\n";
-			cout << "\nDigite 4 para responder:\n";
+			cout << "Digite 4 para responder:\n";
 			cout << "'gosto de trabalhar sob pressao'";
 			PergTela2();
 			cin >> Perg2[PosVet];
