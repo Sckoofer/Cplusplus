@@ -135,7 +135,9 @@ int main()
 
 	while ((ContadorValor < NumEntrev) && (NumEntrev > 0))
 	{
-		cout << "\n\n\n\n";
+		volta:
+		system ("cls");
+	cout << "\n\n\n\n";
 	cout << "    =======                   ======\n";
 	cout << "   =====  QUESTIONARIO INICIADO  =====\n";
 	cout << "    =======                   ======\n";
@@ -147,6 +149,22 @@ int main()
 		cout <<"\n\n>>>> ";
         
 		cin >> ID[PosVet];
+		
+		/*for (int i = 0; i <= NumEntrev; i++)
+		{
+			int g = 0;
+			if (ID[i++] == ID[g--])
+		    {
+			system("cls");
+			cout << "--------------------";
+			cout << "\nEscolha outro numero\n";
+			cout << "para sua identificacao\n";
+			cout << "--------------------\n\n\n";
+			system ("pause");
+			goto volta;
+			}	
+		}*/
+		
         system("cls");
             
     
