@@ -1,5 +1,5 @@
 //Avaliação de perfil
-//90% concluído
+//78% concluído
 //SENHA ADMIN 4112
 
 #include <iostream>
@@ -40,11 +40,6 @@ void PergAdmin() //layout tela do admin
 		cout << "\n>>>>>>> ";
 }
 
-
-
-
-
-
 int main()
 {
 
@@ -75,31 +70,34 @@ int main()
 	while (senha == 4112)
 	{
 		system("cls");
+		cout << "\n---------------------------------------------";
 		cout << "\nNESSE MENU VOCE PODERA REALIZAR ALTERACOES";
 		cout << "\nNA QUANTIDADE DE PONTOS NECESSARIOS QUE O";
-		cout << "\nENTREVISTADO PRECISA PARA GANHAR DESTAQUE";
-		cout << "\n---------------------------------------------\n";
-		cout << "\n---------------------------------------------\n";
+		cout << "\nENTREVISTADO PRECISA PARA GANHAR DESTAQUE\n\n";
 		cout << "PARA MELHOR ENTEDIMENTO, ENTRE NO QUESTIONARIO\n";
-		cout << "EM MODO USUARIO E ESCOLHA QUAL RESPOSTA\n";
-		cout << "RECEBERA A QUANTIDADE DE PONTOS";
-		cout << "\n\n";
-		cout << "\n-----------------------------\n";
+		cout << "QUESTIONARIO EM MODO USUARIO E ESCOLHA QUAL";
+		cout << "\nRESPOSTA RECEBERA A QUANTIDADE DE PONTOS";
+		cout << "\n---------------------------------------------\n";
 		cout << "\nSOBRE A PRIMEIRA PERGUNTA\n";
         PergAdmin();
 		cin >> opcao1;
-        cout << "\nSOBRE A SEGUNDA PERGUNTA\n";
+		system ("cls");
+        cout << "\nSOBRE A SEGUNDA PERGUNTA\n\n";
 		PergAdmin();
 		cin >> opcao2;
-        cout << "\nSOBRE A TERCEIRA PERGUNTA\n";
+		system ("cls");
+        cout << "\n\nSOBRE A TERCEIRA PERGUNTA\n\n";
         PergAdmin();
 		cin >> opcao3;
-        cout << "\nSOBRE A QUARTA PERGUNTA\n";
+		system ("cls");
+        cout << "\n\n\nSOBRE A QUARTA PERGUNTA\n\n";
         PergAdmin();
 		cin >> opcao4;
-        cout << "\nSOBRE A QUINTA PERGUNTA\n";
+		system ("cls");
+        cout << "\n\n\n\nSOBRE A QUINTA PERGUNTA\n\n";
         PergAdmin();
 		cin >> opcao5;
+		system ("cls");
 		senha = 0;
 		system("cls");
 		cout << "\n\n>>  As opcoes corretas estao configradas  <<\n";
@@ -266,8 +264,9 @@ int main()
  			contadorErro++;
  		}
 
- 		if((Perg1[PosVet] == opcao1) && (Perg2[PosVet] == opcao2) && (Perg3[PosVet] == opcao3)
-        && (Perg4[PosVet] == opcao4) && (Perg5[PosVet] == opcao5))
+ 		if((Perg1[PosVet] == opcao1) && (Perg2[PosVet] == opcao2)
+		&& (Perg3[PosVet] == opcao3) && (Perg4[PosVet] == opcao4)
+		&& (Perg5[PosVet] == opcao5))
         {
             
             EscolhidoID[PosVet] = ID[PosVet];
@@ -295,18 +294,19 @@ int main()
 	cout << "DIGITE A SENHA DE ADMINSTRADOR PARA OBTER\n";
 	cout << "O NUMERO DE IDENTIFICACAO DOS ENTREVISTADOS\nSELECIONADOS\n";
 	cout << "-------------------------------------------";
-	cout << "\nSENHA:    ";
+	cout << "\nSENHA: ";
 	cin >> senha;
 	if (senha == 4112)
 	{
 		system("cls");
-		cout << "\n\nA identificacao do(s) entrevistado(s) que corresponderam aos requisitos sao\n";
+		cout << "\n\nA identificacao do(s) entrevistado(s)";
+		cout << "que corresponderam aos requisitos sao\n";
 		for (int a = 0; a <= limiteResult && limiteResult <= NumEntrev; a++)
 		{
 			printf("%d", EscolhidoID[a]);
 			cout << "\n----------------\n";
 		}
-		cout << "ps: o primeiro numero da lista e invalido";
+		cout << "\nps: o primeiro numero da lista e invalido\n\n";
 	}
 	
 	return 0;
