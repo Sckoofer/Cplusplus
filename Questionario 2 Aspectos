@@ -1,6 +1,7 @@
 //Avaliação de perfil
 //78% concluído
 //SENHA ADMIN 4112
+
 #include <iostream>
 
 
@@ -8,14 +9,14 @@ using namespace std;
 
 void PergTela1() //layout dos questionario
 {
-	cout << "\n___________________________________\n\n";
-	cout << "\n\n\n\n";
-	cout << "------------------------";
+	cout << "\n___________________________________\n";
+	cout << "\n\n\n";
+	cout << "-------------------------------------";
 
 }
 void PergTela2() //layout dos questionario
 {
-	cout << "\n------------------------\n";
+	cout << "\n-------------------------------------\n";
 	cout << "\n>>>>>  ";
 }
 void TelaAviso(int contador) //layout tela de erro
@@ -109,10 +110,10 @@ int main()
 
 
 	system("cls");
-	cout << "\n\n--------------------------------------\n";
-	cout << "  Qual o  numero  de  participantes?\n";
+	cout << "\n\n--------------------------------------\n\n";
+	cout << "  Qual o  numero  de  participantes?\n\n";
 	cout << "  O  numero  definira  a quantidade\n";
-	cout << "  maxima de repeticoes de perguntas\n";
+	cout << "  maxima de repeticoes de perguntas\n\n";
 	cout << "--------------------------------------\n";
 	cout << "\n>>>>>  ";
 	cin >> NumEntrev;
@@ -131,10 +132,13 @@ int main()
 	{
 		cout << "\n\n\n\n";
 	cout << "    =======                   ======\n";
-	cout << "   =====  QUESTIONARIO INICIADO   =====\n";
+	cout << "   =====  QUESTIONARIO INICIADO  =====\n";
 	cout << "    =======                   ======\n";
 	cout << "\n\n";
-        cout << "\n\n>> Digite um numero que sera a sua identificacao.\n\n>>>> ";
+	cout << "\n___________________________________";
+        cout << "\n\n>> Digite um numero que sera a sua\n   identificacao";
+        cout << "\n___________________________________";
+		cout <<"\n\n>>>> ";
         
 		cin >> ID[PosVet];
         system("cls");
@@ -158,10 +162,10 @@ int main()
 			cout << "Primeira pergunta:\n";
 			cout << "Voce gosta de trabalhar em equipe?\n";
 			PergTela1();
-			cout << "\nDigite 1 para responder 'nao'\n";
-			cout << "Digite 2 para responder 'um pouco'\n";
-			cout << "Digite 3 para responder 'gosto'\n";
-			cout << "Digite 4 para responder 'gosto bastante'";
+			cout << "\nDigite 1 para responder: 'nao'\n";
+			cout << "Digite 2 para responder: 'um pouco'\n";
+			cout << "Digite 3 para responder: 'gosto'\n";
+			cout << "Digite 4 para responder: 'gosto bastante'";
 			PergTela2();
 			cin >> Perg1[PosVet];
 			contadorErro++;
@@ -176,13 +180,17 @@ int main()
 			system("cls");
 			TelaAviso(contadorErro);
 			cout << "\n___________________________________\n\n";
-			cout << "Segunda pergunta:\n";
+			cout << "Segunda pergunta:\n\n";
 			cout << "Como voce trabalha sob pressao?";
 			PergTela1();
-			cout << "\nDigite 1 para responder 'nunca trabalhei assim'\n";
-			cout << "Digite 2 para responder 'me incomoda um pouco'";
-			cout << "\nDigite 3 para responder 'nao me incomoda trabalhar sob pressao'";
-			cout << "\nDigite 4 para responder 'gosto de trabalhar sob pressao'";
+			cout << "\nDigite 1 para responder:\n";
+			cout << "'nunca trabalhei assim'\n\n";
+			cout << "Digite 2 para responder:\n";
+			cout << "'me incomoda um pouco'\n\n";
+			cout << "\nDigite 3 para responder:\n";
+			cout << "'nao me incomoda trabalhar assim'\n\n";
+			cout << "\nDigite 4 para responder:\n";
+			cout << "'gosto de trabalhar sob pressao'";
 			PergTela2();
 			cin >> Perg2[PosVet];
 			contadorErro++;
@@ -195,13 +203,16 @@ int main()
 			system("cls");
 			TelaAviso(contadorErro);
 			cout << "\n___________________________________\n\n";
-			cout << "Terceira pergunta:\n";
+			cout << "Terceira pergunta:\n\n";
 			cout << "Voce se considera uma pessoa organizada?";
 			PergTela1();
 			cout << "\nDigite 1 para responder 'nao'\n";
-			cout << "Digite 2 para responder 'sou uma pessoa pouco organizada'\n";
-			cout << "Digite 3 para desponder 'mantenho meu ambiente organizado'\n";
-			cout << "Digite 4 para responder 'tudo deve estar organizado e guardado'";
+			cout << "\nDigite 2 para responder:\n";
+			cout << "'sou uma pessoa pouco organizada'\n";
+			cout << "\nDigite 3 para desponder:\n";
+			cout << "'mantenho meu ambiente organizado'\n";
+			cout << "\nDigite 4 para responder:\n";
+			cout << "'tudo deve estar organizado e guardado'";
 			PergTela2();
 			cin >> Perg3[PosVet];
 			contadorErro++;
@@ -214,13 +225,18 @@ int main()
 			system("cls");
 			TelaAviso(contadorErro);
 			cout << "\n___________________________________\n\n";
-			cout << "Quarta pergunta:\n";
-			cout << "Quando acontece uma discussao entre dois colegas, o que voce pensa sobre isso?";
+			cout << "Quarta pergunta:\n\n";
+			cout << "Quando acontece uma discussao entre\ndois colegas,";
+			cout <<  " qual dessas opcoes mais\nse assemelha com voce?";
 			PergTela1();
-			cout << "\nDigite 1 para responder 'nao me envolvo em discussoes'";
-			cout << "\nDigite 2 para responder 'defendo as ideias dos meus amigos se for preciso'";
-			cout << "\nDigite 3 para responder 'encerro a discussao, de ambos os lados'";
-			cout << "\nDigite 4 para responder 'podemos aprender muito com as discussoes'";
+			cout << "\nDigite 1 para responder:\n";
+			cout << "'nao me envolvo em discussoes'";
+			cout << "\n\nDigite 2 para responder:\n";
+			cout << "'defendo as ideias dos meus amigos\n";
+			cout << "\n\nDigite 3 para responder:\n";
+			cout << "'encerro a discussao, de ambos os lados'";
+			cout << "\n\nDigite 4 para responder:\n";
+			cout << "'discussoes fazem parte do aprendizado'";
 			PergTela2();
 			cin >> Perg4[PosVet];
 			contadorErro++;
@@ -234,13 +250,17 @@ int main()
 			system("cls");
 			TelaAviso(contadorErro);
 			cout << "\n___________________________________\n\n";
-			cout << "Quinta pergunta:\n";
-			cout << "O que voce faria se tivesse dificuldade em uma tarefa?";
+			cout << "Quinta pergunta:\n\n";
+			cout << "O que voce faria se tivesse\ndificuldade em uma tarefa?";
 			PergTela1();
-			cout << "\nDigite 1 para responder 'resolveria sozinho com base no meu conhecimento'";
-			cout << "\nDigite 2 para responder 'pediria uma orientacao do que fazer'";
-			cout << "\nDigite 3 para responder 'pediria ajuda na realizacao da tarefa'";
-			cout << "\nDigite 4 para responder 'nao faco o que esta alem de mim'";
+			cout << "\nDigite 1 para responder:";
+			cout << "\n'resolveria sozinho com base\nno meu conhecimento'\n";
+			cout << "\nDigite 2 para responder:\n";
+			cout << "'pediria uma orientacao do que fazer'\n";
+			cout << "\nDigite 3 para responder:\n";
+			cout << "'pediria ajuda na realizacao da tarefa'\n";
+			cout << "\nDigite 4 para responder:\n";
+			cout << "'nao faco o que esta alem de mim'";
 			PergTela2();
  			cin >> Perg5[PosVet];
  			contadorErro++;
@@ -260,16 +280,21 @@ int main()
 		//Finalizacao do questionario
 		ContadorValor++;
 		system("cls");
-		cout << "\n    =====================\n    Perguntas encerradas\n    =====================\n";
+		cout << "\n    =====================\n    ";
+		cout << " Perguntas encerradas\n    ";
+		cout << "=====================\n";
 		cout << "\n\n\n";
 		system ("pause");
 		system("cls");
 	}
 
 	system ("cls");
-	cout << "\n\n\n\n\n\nO LIMITE DE ENTREVISTADOS FOI ATINGIDO\n";
+	cout << "\n\n\n\n\n";
+	cout << "-------------------------------------------";
+	cout << "\nO LIMITE DE ENTREVISTADOS FOI ATINGIDO\n";
 	cout << "DIGITE A SENHA DE ADMINSTRADOR PARA OBTER\n";
-	cout << "O NUMERO DE IDENTIFICACAO DOS ENTREVISTADOS SELECIONADOS\n";
+	cout << "O NUMERO DE IDENTIFICACAO DOS ENTREVISTADOS\nSELECIONADOS\n";
+	cout << "-------------------------------------------";
 	cout << "\nSENHA:    ";
 	cin >> senha;
 	if (senha == 4112)
@@ -281,7 +306,7 @@ int main()
 			printf("%d", EscolhidoID[a]);
 			cout << "\n----------------\n";
 		}
-		cout << "Fim";
+		cout << "ps: o primeiro numero da lista e invalido";
 	}
 	
 	return 0;
