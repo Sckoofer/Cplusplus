@@ -76,3 +76,59 @@ int main()
 	
 	return 0;
 }
+
+
+
+
+
+///////////////////////////////////////////////////
+/*
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	
+	int vet[500], h;
+	int cont = 0;
+	
+	int var1 = 0;
+	
+	int asd = 0;
+	while (cont <= 500)
+	{
+		cont++;
+		var1++;
+		
+		cin >> vet[cont];
+		h 	=  vet[cont];
+		
+		if(asd > 0)
+		{
+			for(int i = 0; i < var1; i++)
+			{
+				if(h == vet[i])
+				{
+					cout << "\nEsse numero ja foi escolhido\n";
+					system("pause");
+					system("cls");
+				}
+			}
+		
+		
+			
+		}
+		
+		
+		asd++;
+		
+	}
+	
+
+	
+	
+	return 0;
+} */
