@@ -1,6 +1,6 @@
   
 //Avaliação de perfil
-//92% concluído
+//90% concluído
 //SENHA ADMIN 4112
 
 #include <iostream>
@@ -109,7 +109,7 @@ int main()
 		system ("cls");
 		senha = 0;
 		system("cls");
-		cout << "\n\n>>  As opcoes corretas estao configradas  <<\n";
+		cout << "\n\n>>  As opcoes corretas foram configuradas  <<\n";
 		cout << ">>  Para desfazer, reinicie o programa    <<\n";
 		cout << "\n\n\n";
 		system("pause");
