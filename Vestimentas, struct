@@ -84,7 +84,7 @@ int main()
 ///////////////////////////////////////////////////
 /*
 
-
+//Teste estrutura de loop sem elementos identicos
 #include <iostream>
 
 using namespace std;
