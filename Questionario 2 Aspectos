@@ -1,3 +1,4 @@
+  
 //Avaliação de perfil
 //90% concluído
 //SENHA ADMIN 4112
@@ -53,6 +54,7 @@ int main()
 	int opcao1,opcao2,opcao3,opcao4,opcao5;
 	int EscolhidoID[1000];
 	int limiteResult = 0;
+	int copia, perm; //permissão para acessar o bloco de identicação repetida
 
 	cout << "\n\n";
 	cout << "++++++++++++++++++++++++++++++++++++++++++\n";
@@ -135,35 +137,42 @@ int main()
 
 	while ((ContadorValor < NumEntrev) && (NumEntrev > 0))
 	{
-		volta:
+		volta:					//retorna em caso de identicação repetida
 		system ("cls");
-	cout << "\n\n\n\n";
-	cout << "    =======                   ======\n";
-	cout << "   =====  QUESTIONARIO INICIADO  =====\n";
-	cout << "    =======                   ======\n";
-	cout << "\n\n";
-	cout << "\n___________________________________";
+		cout << "\n\n\n\n";
+		cout << "    =======                   ======\n";
+		cout << "   =====  QUESTIONARIO INICIADO  =====\n";
+		cout << "    =======                   ======\n";
+		cout << "\n\n";
+		cout << "\n___________________________________";
         cout << "\n\n>> Digite um numero que sera a sua\n";
 		cout << "   identificacao";
         cout << "\n___________________________________";
 		cout <<"\n\n>>>> ";
         
-		cin >> ID[PosVet];
+		cin >>  ID[PosVet];
+		copia = ID[PosVet];
 		
-		/*for (int i = 0; i <= NumEntrev; i++)
+		
+		if(perm != 0) /*Compara o numero de identificação com os demais
+					  em caso de repetição (com exceção do primeiro)
+					  o bloco FOR retorna com o GOTO para a linha 140
+					  */
 		{
-			int g = 0;
-			if (ID[i++] == ID[g--])
-		    {
-			system("cls");
-			cout << "--------------------";
-			cout << "\nEscolha outro numero\n";
-			cout << "para sua identificacao\n";
-			cout << "--------------------\n\n\n";
-			system ("pause");
-			goto volta;
+			for(int i = 0; i < PosVet; i++)
+			{	
+				if(copia == ID[i])
+				{
+					system("cls");
+					cout << "\nDigiteOutroNumero\n";
+					system ("pause");
+					goto volta;	
+				}
 			}	
-		}*/
+			
+		}
+		perm++;
+		
 		
         system("cls");
             
