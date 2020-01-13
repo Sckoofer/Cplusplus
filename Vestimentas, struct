@@ -9,11 +9,7 @@ using namespace std;
 
 struct roupas{
 	
-	string identi;
-	string calcados;
-	string inferiores;
-	string superiores;
-	string chapeu;
+	string identi, calcados, inferiores, superiores, chapeu;
 	
 };
 
@@ -64,8 +60,9 @@ int main()
 		cout << torso[repet].superiores << "\n";
 		cout << calcas[repet].inferiores << "\n";
 		cout << pes[repet].calcados << "\n";
-		cout << "\n--------Digite algo para continuar---------\n";
-		cin >> cont;
+		
+		system("pause");
+		
 		system("cls");
 		
 		
