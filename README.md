@@ -9,12 +9,10 @@ Realiza a avaliação de cada entrevistado pelas perguntas respondidas por eles.
 desejado pelo entrevistador.
 
 
-Vestimentas, struct
-
-Teste com uma struct
+Vestimentas, struct:
 Permite o usuário escolher os conjuntos de roupas.
 
 
 
-Questionário Simples
+Questionário Simples:
 A primeira versão questionário 2.
